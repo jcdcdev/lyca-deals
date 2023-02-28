@@ -1,0 +1,43 @@
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyca Sim Only Deals</title>
+    <link rel="icon"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAABANJREFUWEfFl1tsVFUUhr8900kvaGkDxWKtVdCGWNBUJFJEQyTaUCDQagdafMGq1RiNqBH7oEQhKQZ40CgGqvgkttNCoeok2qiJ8QZYa8Rqg1rHRKnoNC1SZpjOZZt9Tud2OpcziOl6mzP/Wuvfe6/177UFZq1+30xEQQ1wJ1JUAtcABZPuY4ALIfuBj5FjTjqbz5oJLdKCatvLsVq3ImQDkJsWrwO8SPEOweBLdG88lconOYF6Ry5CbkeKxwGbycRGmB8hX0GK5+i0exPFSEzgnrevR9i6EVRcZOJ4N8kA0l/LoU0/GeNNJVDXfjNWywfA7EuSPBrETTBUzeGN38TGjSegVm6xfXExyUtn53FDST552Vbc//joGxrFMxE0rsFNyL8sdieiBNSZS05ksu0WAffdUcaTa8q5qSzcEHrOc94Au3oG2XH4R6SM4aGOQ7AkXBNRAvaO3UjxlNltL5hhw7GlirtuvCKlyzbHAC92/RCPEXIPjg1Pq486AdVqWZbvzVZ7ts3CJ9tWUFU+KxL480E3/a4xyoryqKmci1VtD3DW46eo6Sj+YOw24CcQWqhaVEfd2/kmQt5vdvU7Ny1i67oFGnwiEKLx5WMcOvZ7xP3Z9QtobVwU+T3/MSdDZ84bOkMcoKu+SaAUjsJhsyIzZ2Y2v+1dTY7NqgVsOXiSnUcG44KvqizG2XJ75FtJ87ucHr1gXJ8XRucK7B0NSHHQ7Oofrb6OV5uUEuuFVvxQDx5ffLWvX3Ilj9w9X8OoTqjdpRorgQnZqAi0IcUDZgl0bFmKvapUgzv7h1nd+plZ16k4Id8Q1Du+BhabjeJ6rYayohka/HnHANuNFW42kI7rUwTcQLScUwQoLshheP/aCKJ6x6d8+N2ZzFLGo0cUgQCgV1QSU0Lzgr0CixCa0oXN4wsQiumuzXtP0PVVtBtMMAuaIvB+y3Ktt9NZSfN7nB5NeOklc9UIpDwCJSjq3PNzbVyWk4VlUmB8/hA+f7T6h/46T+Uzvek4Gv/XjsBUEarEY2+t4/JcfTR4uK2Pfb1DmSY04vtMt+HC0nxO7qmOBFCr/dalJrH/YFobmhSiB1dey/7mW7Rs4xcCFG4+QiBe3zNnogmRSSl2tixn1WQhdh//g7rdSdTNPI1JKVYOaS6jxfMKOd66UmtDZZeg/0GGLyMVMcl1vKKiSGu/htuu5qpZ+kB8zuvn9d5fIO52nbrsto9+5ec/x5Pth+E6VrAEA0n7E0vZsEzX/UwsJCVzmnoYGZ9I7DZlIFGwBCOZkl0lv5ma6o6kmpB0JFNZYobS7CwLdbeWZJpbw7v+9vDlqZFEvimG0jB8WsfyMIlpfZiESUzr0yz29KbtcWosof/pef4vZjaQcCPN7TkAAAAASUVORK5CYII="
+        type="image/png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://unpkg.com/tabulator-tables@5.4.4/dist/css/tabulator.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-dark text-white d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+        <div class="container py-2">
+            <div class="d-flex">
+                <h2 class="font-weight-light me-2">Lyca Mobile Sim Only Deal Scanner v0.0.1</h2>
+                <div class="mb-2">
+                    <button id="run" type="button" class="btn btn-primary" onclick="Run()">Go</button>
+                </div>
+            </div>
+            <div id="progress" class="progress mb-2" style="display: none;">
+                <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+            </div>
+            <div id="table" style="display: none;"></div>
+        </div>
+    </main>
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <span class="text-muted">©️ <a href="https://jcdc.dev">jcdc dev</a> 2023 - Present</span>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script type="text/javascript" src="https://unpkg.com/tabulator-tables@5.4.4/dist/js/tabulator.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
